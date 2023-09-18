@@ -5,11 +5,13 @@
     --colorFondos: #e8e8e8;
     --colorGris: #ffffff;
     --colorInputs: #f5f5f5;
+    --maxco: 15;
 }
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
+    font-size: 1.2rem;
 }
 
 a{
@@ -74,7 +76,7 @@ input[type="text"], input[type="password"], input[type="email"]
 
 button{
     background-color: var(--colorSecundario);
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: bold;
     color: white;
     border: none;
@@ -110,4 +112,99 @@ footer img{
 .icono{
     padding: 2px;
     color: white;
+}
+
+.tableTop{
+    background-color: var(--colorPrimario);
+    color: white;
+    padding: 15px 25px;
+}
+
+.tableTitle{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 15px;
+}
+
+
+.btnCRUD{
+    color: #fff;
+    float: right;
+    font-size: 1rem;
+    border: none;
+    min-width: 50px;
+    border-radius: 2px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#btnEstado{
+    background-color: red;
+}
+
+#btnNuevo{
+    background-color: green;
+}
+
+table{
+    background-color: #ffffff;
+    width: 100%;
+    text-align: left;
+    font-family: 'Roboto', Courier, monospace;
+    font-size: 1.5rem;
+    font-style: bold;
+    border-collapse: collapse;
+    line-height: 2rem;
+    border-radius: 10px;
+}
+
+.contenedorTabla {
+    margin: 5% 5%;
+    width: 90%;
+    height: auto;
+    overflow: auto;
+}
+
+table thead {
+    font-size: 1.5rem;
+    text-shadow: 0px 2px 2px #00000082;
+    color: white;
+    background-color: var(--colorGris);
+    border-bottom: 2px gray solid;
+    text-align: left;
+}
+
+th{
+    background-color: var(--colorSecundario);
+    white-space: nowrap;
+    overflow: hidden;  
+    text-overflow: ellipsis;
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border: none;
+}
+
+th::after, td::after{
+    content: '';
+    width: 50px;
+    display: inline-block;
+}
+
+td{
+    white-space: nowrap;
+    overflow: hidden;  
+    text-overflow: ellipsis;
+    padding: 8px;
+    color: black;
+    width: max-content;
+    vertical-align: middle;
+}
+
+tr{
+    border-top: 1px gray solid;
+}
+
+tbody tr:nth-child(odd){
+    background-color: var(--colorFondos);
 }
